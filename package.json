@@ -2,6 +2,9 @@
     "name": "hw1-flashcards",
     "version": "1.0.0",
     "description": "The project is setup with npm already. `npm install` will install packages, `npm run compile` will run the TypeScript compiler, and `npm run start` will start the compiled program. *Tip*: When using `npm run start`, type `--` after start to ensure arguments you pass are interpreted as part of the `flashcard` command, that is `npm run start -- <arguments>`.",
+    "bin": {
+        "flashcard": "dist/index.js"
+    },
     "main": "index.js",
     "scripts": {
         "compile": "tsc",

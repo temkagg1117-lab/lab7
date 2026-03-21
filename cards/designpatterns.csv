@@ -1,7 +1,10 @@
-Composite -- Describes a group of objects that are treated the same way as a single instance of the same type of object.
-Strategy -- Enables selecting an algorithm at runtime by providing a corresponding object implementing the algorithm.
-Template method -- Allows subclasses to specialize an algorithm by overriding specific methods that represent holes in the algorithm.
-Iterator -- Traverse a container and access the container's elements without knowing the internals of the container.
-Decorator -- Add behavior to an individual object, dynamically, without affecting the behavior of other objects from the same class.
-Adapter -- Allows the interface of an existing class to be used as another interface.
-Facade -- An object that serves as a front-facing interface masking more complex underlying or structural code.
+Flexbox -- A layout system used to arrange items in a row or column with flexible sizing and alignment.
+Grid -- A two-dimensional layout system for creating complex responsive designs with rows and columns.
+Margin -- Controls the outer space around an element.
+Padding -- Controls the inner space between content and the element's border.
+Display -- Defines how an element is displayed (block, inline, flex, grid, etc.).
+Position -- Specifies how an element is positioned (static, relative, absolute, fixed, sticky).
+Z-index -- Controls the vertical stacking order of positioned elements.
+Overflow -- Determines what happens when content overflows its container.
+Box-sizing -- Defines how width and height are calculated (content-box or border-box).
+Border -- Sets the border around an element including width, style, and color.

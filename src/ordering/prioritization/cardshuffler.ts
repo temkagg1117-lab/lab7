@@ -1,5 +1,5 @@
-import { CardStatus } from '../../cards/cardstatus'
-import { CardOrganizer } from '../cardorganizer'
+import { CardStatus } from '../../cards/cardstatus.js'
+import { CardOrganizer } from '../cardorganizer.js'
 
 function newCardShuffler (): CardOrganizer {
   return {

@@ -1,10 +1,10 @@
 import { newMostMistakesFirstSorter } from '../src/ordering/prioritization/mostmistakes.js'
-import { newRecentMistakesFirstSorter } from '../src/ordering/prioritization/recentmistakes.js'
+import { RecentMistakesFirstSorter } from '../src/ordering/prioritization/recentmistakes.js'
 import { CardStatus, newCardStatus } from '../src/cards/cardstatus.js'
 import { newFlashCard } from '../src/cards/flashcard.js'
 
 const createMostMistakesFirstSorter = newMostMistakesFirstSorter
-const createRecentMistakesFirstSorter = newRecentMistakesFirstSorter
+const createRecentMistakesFirstSorter = new RecentMistakesFirstSorter
 
 describe('Test prioritization', () => {
   const flashCard1 = newFlashCard('Question1', 'Answer1')
@@ -71,7 +71,7 @@ describe('Test prioritization', () => {
     expect(cardsSorted[3]).toEqual(cardStatus6)
     expect(cardsSorted[4]).toEqual(cardStatus3)
     expect(cardsSorted[5]).toEqual(cardStatus5)
-    expect(cardsSorted[6]).toEqual(cardStatus7)
+    expect(cardsSorted[6]).toEqual(cardStatus7) 
     expect(cardsSorted[7]).toEqual(cardStatus8)
   })
 })
